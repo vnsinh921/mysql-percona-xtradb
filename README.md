@@ -6,21 +6,21 @@ Role Infomation
 
 Role Variables
 --------------
-  root_password: 4E6fPwVY1@5TWERj2IRf  
-  max_connections: 500  
-  sst:  
-    user: sstuser  
-    pass: QPrw3Qz0FpxrsF5XU7wI  
-  wsrep:  
-    cluster_name: test_percona_cluster  
-    cluster_address:  
-      - 10.0.0.11  
-      - 10.0.0.12  
-      - 10.0.0.13  
+    root_password: 4E6fPwVY1@5TWERj2IRf  
+    max_connections: 500  
+    sst:  
+      user: sstuser  
+      pass: QPrw3Qz0FpxrsF5XU7wI  
+    wsrep:  
+      cluster_name: test_percona_cluster  
+      cluster_address:  
+        - 10.0.0.11  
+        - 10.0.0.12  
+        - 10.0.0.13  
 
-  my_ip: 10.0.0.11  
-  is_master: True  
-  mysql_bootstrap: "{{ is_master }}"  
+    my_ip: 10.0.0.11  
+    is_master: True  
+    mysql_bootstrap: "{{ is_master }}"  
 
 Example Playbook
 ----------------
